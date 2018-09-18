@@ -240,6 +240,32 @@ function card_element_dndstats(params, card_data, options) {
     return result;
 }
 
+function card_element_lancer_hase_stats(params, card_data, options) {
+	var hull = params[0]
+	var agi = params[1]
+	var sys = params[2]
+	var eng = params[3]
+	
+    var result = "";
+    result += '<table class="card-stats">';
+    result += '    <tbody><tr>';
+    result += '      <th class="card-stats-header">HULL</th>';
+    result += '      <th class="card-stats-header">AGI</th>';
+    result += '      <th class="card-stats-header">SYS</th>';
+    result += '      <th class="card-stats-header">ENG</th>';
+    result += '    </tr>';
+    result += '    <tr>';
+    result += '      <td class="card-stats-cell">' + hull + '</td>';
+    result += '      <td class="card-stats-cell">' + agi + '</td>';
+    result += '      <td class="card-stats-cell">' + sys + '</td>';
+    result += '      <td class="card-stats-cell">' + eng + '</td>';
+    result += '    </tr>';
+    result += '  </tbody>';
+    result += '</table>';
+    
+    return result;
+}
+
 function card_element_bullet(params, card_data, options) {
     var result = "";
     result += '<ul class="card-element card-bullet-line">';
@@ -275,6 +301,7 @@ var card_element_generators = {
     boxes: card_element_boxes,
     description: card_element_description,
     dndstats: card_element_dndstats,
+    hasestats: card_element_lancer_hase_stats,
     text: card_element_text,
     center: card_element_center,
     justify: card_element_justify,
