@@ -69,8 +69,8 @@ page[size="25x35"] {
 }
 
 .card-size-50x35 {
-    width:2.5in;
-    height:7.5in;
+    width:5.0in;
+    height:3.5in;
 }
 .card-size-50x35 .card-back-icon {
     width: 1.5in;
@@ -78,8 +78,8 @@ page[size="25x35"] {
 }
 
 .card-size-75x35 {
-    width:2.5in;
-    height:7.5in;
+    width:7.5in;
+    height:3.5in;
 }
 .card-size-75x35 .card-back-icon {
     width: 2in;
