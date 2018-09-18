@@ -361,7 +361,7 @@ var card_element_generators = {
     dndstats: card_element_dndstats,
     hasestats: card_element_lancer_hase_stats,
     sasstats: card_element_lancer_sas_stats,
-    hasesas: card_element_lancer_hase_sas_stats,
+    hasesasstats: card_element_lancer_hase_sas_stats,
     text: card_element_text,
     center: card_element_center,
     justify: card_element_justify,
