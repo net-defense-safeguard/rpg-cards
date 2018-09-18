@@ -289,6 +289,41 @@ function card_element_lancer_sas_stats(params, card_data, options) {
     return result;
 }
 
+function card_element_lancer_hase_sas_stats(params, card_data, options) {
+    var hull = params[0]
+    var agi = params[1]
+    var sys = params[2]
+    var eng = params[3]
+    var size = params[4]
+    var armor = params[5]
+    var sp = params[6]
+    
+    var result = "";
+    result += '<table class="card-stats">';
+    result += '    <tbody><tr>';
+    result += '      <th class="card-stats-header">HULL</th>';
+    result += '      <th class="card-stats-header">AGI</th>';
+    result += '      <th class="card-stats-header">SYS</th>';
+    result += '      <th class="card-stats-header">ENG</th>';
+    result += '      <th class="card-stats-header">Size</th>';
+    result += '      <th class="card-stats-header">Armor</th>';
+    result += '      <th class="card-stats-header">SP</th>';
+    result += '    </tr>';
+    result += '    <tr>';
+    result += '      <td class="card-stats-cell">' + hull + '</td>';
+    result += '      <td class="card-stats-cell">' + agi + '</td>';
+    result += '      <td class="card-stats-cell">' + sys + '</td>';
+    result += '      <td class="card-stats-cell">' + eng + '</td>';
+    result += '      <td class="card-stats-cell">' + size + '</td>';
+    result += '      <td class="card-stats-cell">' + armor + '</td>';
+    result += '      <td class="card-stats-cell">' + sp + '</td>';
+    result += '    </tr>';
+    result += '  </tbody>';
+    result += '</table>';
+    
+    return result;
+}
+
 function card_element_bullet(params, card_data, options) {
     var result = "";
     result += '<ul class="card-element card-bullet-line">';
